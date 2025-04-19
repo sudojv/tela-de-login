@@ -9,12 +9,14 @@
 
 :root {
     --main-font-family: 'Roboto', sans-serif;
+    --colour-light: hsl(45, 100%, 50%);
+    --colour-dark: hsl(45, 100%, 25%);
 }
 
 body {
     height: 100vh;
     font-family: var(--main-font-family);
-    background: white url('images/background.jpg') no-repeat center center / cover fixed;
+    background: white url('../images/background.jpg') no-repeat center center / cover fixed;
 }
 
 main {
@@ -36,7 +38,7 @@ img#logo {
     margin-bottom: 15px;
 }
 
-input#email, input#password, input#login {
+input#name, input#email, input#password, input#login, input#register {
     display: block;
     width: 98%;
     height: 40px;
@@ -47,29 +49,37 @@ input#email, input#password, input#login {
     font: bold 1em var(--main-font-family);
 }
 
-input#login {
-    background-color: hsl(45, 100%, 50%);
-    border: 1px solid hsl(45, 100%, 25%);
+input#login, input#register {
+    background-color: var(--colour-light);
+    border: 1px solid var(--colour-dark);
     color: white;
     font-weight: bold;
     font-size: 1.2em;
+    margin-bottom: 0px;
 }
 
-input#login:hover {
-    background-color: hsl(45, 100%, 45%);
+input#login:hover, input#register:hover {
+    background-color: var(--colour-light);
+}
+
+input#offers, input#terms, input#remember {
+    accent-color: var(--colour-light);
 }
 
 a {
-    color: hsl(45, 100%, 45%);
+    color: var(--colour-light);
     text-decoration: none;
     font-weight: bold;
 }
 
 p {
     font-size: 0.9em;
+}
+
+main > p {
     text-align: center;
 }
 
-main > form > p {
+p#forgot {
     text-align: right;
 }

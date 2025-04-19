@@ -5,20 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de Login</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/login.css">
 </head>
 <body>
     <main>
-        <img id="logo" src="images/logo.png" alt="Logo do Site">
+        <img id="logo" src="images/logo.png" alt="Logo do site">
         <hr>
         <form action="#" method="post">
             <input id="email" type="email" name="email" id="email" autocomplete="email" required placeholder="E-mail">
             <input id="password" type="password" name="password" id="password" autocomplete="current-password" required placeholder="Senha">
-            <p><a href="#">Esqueceu a senha?</a></p>
+            <p id="forgot"><a href="esqueceu.html">Esqueceu a senha?</a></p>
+            <p>
+                <input type="checkbox" name="remember" id="remember">
+                <label for="remember">Lembrar de mim</label>
+            </p>
             <input id="login" type="submit" value="Login">
         </form>
         <p>
-            Não possui uma conta? <a href="#">Cadastre-se grátis</a>
+            Não possui uma conta? <a href="cadastro.html">Cadastre-se grátis</a>
         </p>
     </main>
 </body>

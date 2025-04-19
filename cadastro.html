@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Cadastro</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/login.css">
+</head>
+<body>
+    <main>
+        <img id="logo" src="images/logo.png" alt="Logo do Site">
+        <hr>
+        <form action="#" method="post">
+            <input type="text" name="name" id="name" autocomplete="name" placeholder="Nome completo" required>
+            <input type="email" name="email" id="email" autocomplete="email" placeholder="E-mail" required>
+            <input type="password" name="password" id="password" autocomplete="new-password" placeholder="Senha" required>
+            <input type="password" name="password" id="password" autocomplete="new-password" placeholder="Confirmar senha" required>
+            <p>
+                <input type="checkbox" name="offers" id="offers" checked>
+                <label for="offers">Quero receber ofertas por e-mail</label>
+            </p>
+            <p>
+                <input type="checkbox" name="terms" id="terms" required>
+                <label for="terms">Li e aceito os <a href="termos.html">termos de uso</a> do site</label>
+            </p>
+            <input id="register" type="submit" value="Criar conta">
+        </form>
+        <p>Já possui uma conta? <a href="index.html">Clique aqui</a></p>
+    </main>
+</body>
+</html>
